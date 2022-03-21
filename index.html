@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greek gods</title>
+    <title>Basic Charts</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <div id="plot"></div>
-    <script src="data.js"></script>
+    <div id="plotArea"></div>
     <script src="plots.js"></script>
 </body>
 </html>
+
+const url = "https://api.spacexdata.com/v2/launchpads";
+
+d3.json(url).then(receivedData => console.log(receivedData));
+
+
+
